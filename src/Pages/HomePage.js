@@ -9,8 +9,8 @@ function HomePage() {
   return (
     <div>
       <Header />
-      <Banner name='Apple China' title='Think Different - Không Gì Không Thể Làm Giả'/>
-      <Product />
+      <Banner name='Apple China' title='Think Different - Không Gì Không Thể Làm Giả' />
+      <Product number='8' />
       <Footer />
     </div>
   )

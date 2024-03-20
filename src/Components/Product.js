@@ -73,7 +73,7 @@ const product = [
         id: 8,
         image: img7,
         name: "iPhone 15 ",
-        price: "5000.o"
+        price: "5000.0"
     },
 
     {
@@ -133,14 +133,15 @@ const product = [
     },
 ];
 
-function Product() {
+function Product(props) {
+    const firstEightProducts = product.slice(0, props.number);
     return (
         <div className="py-5">
             <Container className="px-4 px-lg-5 mt-5">
                 <Row className="gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     {
-                        product.map(item => (
-                            <Col className="mb-5">
+                        firstEightProducts.map(item => (
+                            <Col key={item.id} className="mb-5">
                                 <Card className="h-100">
 
                                     <CardImg style={{ height: `250px` }} src={item.image} />

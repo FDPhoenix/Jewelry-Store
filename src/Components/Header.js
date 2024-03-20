@@ -24,9 +24,9 @@ function Header() {
                 Cart
                 <span className="badge bg-dark text-white ms-1 rounded-pill">0</span>
               </Link>
-              <button className="ms-2 btn btn-outline-dark">
+              <Link to='/login' className="ms-2 btn btn-outline-dark">
                 <Link className="nav-link active" aria-current="page" to="/login">Login</Link>
-              </button>
+              </Link>
             </form>
           </div>
         </div>
